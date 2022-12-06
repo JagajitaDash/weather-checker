@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.box{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+    
+}
+ .box .error-msg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.inputData{
+    border: 1px solid #1cc2fc;
+    background: #1cc2fc;
+    width: 35vw;
+    height:60vh;
+    border-radius: 10px;
+    text-align: center;
+    padding:20px;
+}
+.inputData h1 {
+    color: #fff;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+.inputData .inputField{
+    border-radius: 30px;
+    border: 1px solid #1cc2fc;
+    height: 30px;
+    padding:10px;
+
+}
+.fa-street-view:before {
+    content: "\f21d";
+    font-size: 40px;
+    padding-right: 10px;
+}
+.info{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+h1.temp {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+i.fa-solid.fa-cloud {
+    font-size: 50px;
+}
+.waveone{
+opacity:0.3;
+position:absolute;
+top:100%;
+left:50%;
+background:#fff;
+width:50rem;
+height:50rem;
+margin-left:-25rem;
+margin-top:-20rem;
+transform-origin:50% 48%;
+border-radius:43%;
+animation:drift 3000ms infinite linear;
+z-index:1;
+}
+.wavetwo{
+    animation:drift 5000ms infinite linear;  
+    z-index:2;
+    opacity:0.2;
+}
+.wavethree{
+    animation:drift 7000ms infinite linear;  
+    z-index:3;
+    opacity:0.1;
+}
+box.after{
+content:"";
+display:block;
+left:0;
+top:0;
+width:100%;
+height:100%;
+z-index:11;
+transform:translate3d(0,0,0);
+}
+@keyframes drift{
+    from{
+        transform: rotate(0deg);
+    }
+    from{
+        transform: rotate(360deg);
+    }
+}
