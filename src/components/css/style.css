@@ -3,11 +3,12 @@
     padding:0;
     box-sizing: border-box;
 }
+
 .box{
     display:grid;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
 
     
@@ -21,8 +22,8 @@
 .inputData{
     border: 1px solid #1cc2fc;
     background: #1cc2fc;
-    width: 35vw;
-    height:60vh;
+    width: 100%;
+    height:100%;
     border-radius: 10px;
     text-align: center;
     padding:20px;
